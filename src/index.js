@@ -1,6 +1,6 @@
-import "./index.css";
+import './index.css';
 
-const button = document.querySelector("#alertButton");
-button.addEventListener("click", () => {
-    alert("Hello World!");
-})
+const button = document.querySelector('#alertButton');
+button.addEventListener('click', () => {
+	alert('Hello World!');
+});
