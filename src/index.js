@@ -1,6 +1,22 @@
+// Inject css into DOM using webpack
 import './index.css';
+import { hello } from './app/App';
 
-const button = document.querySelector('#alertButton');
-button.addEventListener('click', () => {
-	alert('Hello World!');
-});
+// Variables
+const button = document.querySelector('#button');
+
+const start = () => {
+	init();
+};
+
+const init = () => {
+	registerListeners();
+};
+
+const registerListeners = () => {
+	button.addEventListener('click', () => {
+		alert(hello());
+	});
+};
+
+start();
